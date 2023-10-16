@@ -1,0 +1,52 @@
+/*  Global */
+:root {
+    /* App Colors */
+    --color-primary: var(--color-black); /* 주된 색상 */
+    --color-primary-variant: var(--color-gray); /* 주된 색상 변형된 표현 */
+    --color-accent: var(--color-blue); /* 강조하는 색상 */
+    --color-accent-variant: var(--color-orange); /* 강조색상 변형된 표현 */
+    --color-text: var(--color-white); /* 텍스트 색상 */
+
+    /* Colors */
+    --color-white: #ffffff;
+    --color-black: #050a13;
+    --color-blue: #03e8f9;
+    --color-orange: #fd6413;
+    --color-gray: #1b1e26;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0; /* 마진 초기화 */
+}
+
+ul {
+    list-style: none; /* list dot 제거 */
+    padding: 0; /* 왼쪽 여백 제거 */
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text); /* a태그 배경색 설정 */
+}
+
+/* button {
+    background-color: transparent; 버튼 색상 제거 
+    outline: 0;
+    border: 0;    
+} */
+
+/* button:focus {
+    outline: 10px solid var(--color-blue);
+} */
