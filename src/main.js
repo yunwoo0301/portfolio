@@ -14,3 +14,9 @@ document.addEventListener('scroll', () => { /* addEventListener : 스크롤이 �
     }
 });
 
+// Home 섹션을 아래로 스크롤 시 투명하게 처리함.
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+document.addEventListener('scroll', ()=> { // scroll 이벤트 발생 시 해당 함수 호출
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
