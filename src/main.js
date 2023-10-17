@@ -1,3 +1,5 @@
+'use strict'; /* 예전 버전에 나쁜 관행을 쓴다면 에러 코드 알림 */
+
 /*window.document.querySelector();*/
 // document.querySelector('.header'); : 문자열 형태로 선택자를 넣고 해당 클래스를 찾도록 설정 
 
