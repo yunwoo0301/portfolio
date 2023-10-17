@@ -13,6 +13,9 @@
     --color-blue: #03e8f9;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+
+    /* Size */
+    --size-max-width : 1200px;
 }
 
 * {
@@ -56,6 +59,11 @@ a {
 .section {
     padding: 4rem;
     text-align: center;
+}
+
+.max-container { /* 가로로 퍼지지 못하도록 width 값 설정 */
+    max-width: var(--size-max-width);
+    margin: auto; /* 중앙 정렬 */
 }
 
 .title {
@@ -159,4 +167,64 @@ a {
     color: var(--color-text);
     outline: 2px solid var(--color-accent); /* 테두리 적용 시 컨텐츠 사이즈 영향을 미치지 않기 위해 */
 
+}
+
+/* About */
+.majors { /* ul 디자인 클래스 */
+    display: flex; /* 전공 한줄 나란히 나열 */
+    justify-content: space-between; /* 나란히 간격 조절 */
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.major { /* li 디자인 클래스 */
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default; /* 텍스트 커서 제거 */
+    box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38); /* box shadow 적용 */
+}
+
+.major__icon {
+    font-size: 4rem; /* icon 크기 설정 */
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease; /* 회전 애니메이션 적용 시 .3초 자연스럽게 설정 */
+}
+
+.major__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.major:hover .major__icon { /* major 애니메이션 적용 */
+    transform: rotate(-15deg) scale(1.2); /* icon 호버 시 -15도 기울이기 및 확대 효과 적용*/
+}
+
+.jobs {
+    text-align: start;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* logo와 경력사항 간격 조절 */
+    margin-bottom: 1rem;
+}
+
+.job__name {
+    color: var(--color-primary);
+}
+
+.job__period {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+}
+
+.job__logo { /* 로고 이미지 크기 조절 */
+    width: 150px;
+    height: 50px;
+    object-fit: cover; /*원본 이미지 비율 유지*/
 }
