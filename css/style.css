@@ -52,6 +52,22 @@ a {
     outline: 10px solid var(--color-blue);
 } */
 
+/*  Common (공통 적용) */
+.section {
+    padding: 4rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0; /* 상하, 좌우 여백 설정 */
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
 /* Header*/
 .header {
     background-color: black; /* 영역 구분 확인 어려울 시 배경색 지정 */
