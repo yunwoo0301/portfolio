@@ -78,7 +78,7 @@ a {
 
 /* Header*/
 .header {
-    background-color: black; /* 영역 구분 확인 어려울 시 배경색 지정 */
+    background-color: transparent; 
     position: fixed;
     top: 0; /* 상단 위치에 고정 */
     width: 100%; /* 위 가로줄 전체 크기 잡기 */
@@ -87,7 +87,12 @@ a {
     justify-content: space-between; /* 양 옆(수평) 나란히 배치 */
     align-items: center; /* 아이템 영역 수직 중앙 정렬 */
     z-index: 1;
+    transition: all 300ms ease;
+}
 
+.header--dark { /* 스크롤 시 다크 동적 스타일링 추가 */
+    background-color: var(--color-primary);
+    box-shadow: rgba(10, 5, 50, 0.24) 0px 3px 8px;
 }
 
 .header__logo {
