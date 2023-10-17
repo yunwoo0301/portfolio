@@ -37,7 +37,7 @@
             <img class="header__logo__img" src="images/favicon.ico" alt="logo">
             <h1 class="header__logo__title"><a href="#">Yunwoo</a></h1>
         </div>
-        <nav>
+        <nav class="header__nav"> <!-- nav 요소 미디어쿼리 적용 위해-->
             <ul class="header__menu">
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
@@ -74,9 +74,9 @@
                     <p class="major__title">Front-end</p>
                     <p>HTML, CSS, JavaScript, React, Web APIs, FireBase, Styled-Component</p>
                 </li>
-                <li class="major">
+                <li class="major__tools"> <!-- 협업툴 크기 조절 위해 따로 클래스명 지정 -->
                     <i class="fa-solid fa-comments major__icon"></i>
-                    <p class="major__title">Communication Tools</p>
+                    <p class="major__title">Communication-Tools</p>
                     <p>Git, GitHub, Notion, Figma, Slack</p>
                 </li>
                 <li class="major">
