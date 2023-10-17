@@ -30,3 +30,15 @@ document.addEventListener('scroll', () => {
         arrowUp.style.opacity = 0; /* 화살표 버튼 노출되지 않도록 */
     }
 })
+
+// Navbar 토글버튼 클릭 처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => { /* 토글 버튼 클릭 시 함수 호출 */
+    navbarMenu.classList.toggle('open'); /* 클릭을 할때마다 open 클래스를 토글링함 */
+});
+
+// Navbar 메뉴 클릭 시 메뉴 자동으로 닫아줌
+navbarMenu.addEventListener('click', () => { /* 토글 버튼 클릭 시 함수 호출 */
+    navbarMenu.classList.remove('open'); /* 클릭을 할때마다 open 클래스를 토글링함 */
+});

@@ -45,15 +45,15 @@ a {
     color: var(--color-text); /* a태그 배경색 설정 */
 }
 
-/* button {
-    background-color: transparent; 버튼 색상 제거 
+button {
+    background-color: transparent; /* 버튼 색상 제거 */ 
     outline: 0;
     border: 0;    
-} */
+}
 
-/* button:focus {
-    outline: 10px solid var(--color-blue);
-} */
+button:focus {
+    outline: 1px solid transparent;
+}
 
 /*  Common (공통 적용) */
 .section {
@@ -110,13 +110,24 @@ a {
     font-size: 1.8rem; /* rem : 상대적인 unit */
 }
 
+.header__toggle {
+    display: none; /* 브라우저 상태에선 노출되지 않도록 숨김 */
+    color: var(--color-white);
+    font-size: 1.5rem;
+    position: absolute; /* 기존 flex box 위치에서 벗어나므로 */
+    top: 1.3rem;
+    right: 1rem;
+}
+
 .header__menu {
     display: flex; /* nav 요소 나란히 한줄에 정렬 */
     gap: 4px; /* 요소 사이 간격 설정 */
 }
 
 .header__menu__item {
+    display: block;
     padding: 8px 16px; /* 패딩 상하, 좌우 여백 설정 */ 
+    border : 1px solid transparent; /* 호버 시 밑으로 밀려나지 않기 위해 */
 }
 
 .header__menu__item:hover {
@@ -406,7 +417,7 @@ a {
 
 @media screen and (max-width: 768px) {
     .section {
-        padding: 3rem 2rem;
+        padding: 4rem 2rem;
     }
     
     .title {
@@ -420,13 +431,23 @@ a {
     .header {
         flex-direction: column; /* 로고와 메뉴 수직 정렬 */
         align-items: start; /* 왼쪽으로 정렬 */
+        background-color: var(--color-primary);
     }    
 
+    .header__toggle {
+        display: block;
+    }
+
     .header__menu {
+        display: none; /* toggle 메뉴 위에 숨김 */
         flex-direction: column; /* nav 요소 수직 정렬 */
         text-align: center;
-        padding: 1rem 4rem;
+        margin: 1rem 4rem; /* 해당 영역만 클릭하기 위해 */
         gap: 1rem;
+    }
+
+    .header__menu.open {
+        display: flex;
     }
 
     .header__nav {
