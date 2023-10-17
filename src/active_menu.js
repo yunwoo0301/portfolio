@@ -14,29 +14,36 @@ const sectionIds = [ // 섹션 아이템 배열 생성
     '#contact'
 ]; 
 const sections = sectionIds.map((id) => document.querySelector(id)); // 앞서 선언된 섹션 아이템 배열들 중 id를 기준으로 호출해 새로운 sections 배열 생성.
-const navItems = sectionIds.map((id) => 
+const navItems = sectionIds.map((id) => // 섹션아이템 배열을 순회하여 navItems를 모두 가져옴 
     document.querySelector(`[href="${id}"]`));
 
 // console.log(sectionIds);
 // console.log(sections);
 // console.log(navItems);
 
-const visibleSections = sectionIds.map(() => false); // 기본적인 요소 안보이도록 비노출
+const visibleSections = sectionIds.map(() => false); // visibleSections : 노출 or 비노출인지 배열 생성 / 기본적인 요소 안보이도록 비노출
+let activeNavItem = navItems[0];
 
-const options = {};
+const options = {
+    rootMargin: '-20% 0px 0px 0px',
+    threshold: [0, 0.98], // contact 구간 보여지기 위해
+};
+
 const observer = new IntersectionObserver(observercallback, options);
-sections.forEach(section => observer.observe(section));
+sections.forEach((section) => observer.observe(section));
 
 function observercallback(entries) {
-    let selectlastOne;// 마지막 index를 만드는 flag 변수
-    entries.forEach(entry => {
+    let selectLastOne;// 마지막 index를 만드는 flag 변수
+    entries.forEach((entry) => {
         const index = sectionIds.indexOf(`#${entry.target.id}`);
         visibleSections[index] = entry.isIntersecting;
-        selectlastOne = index === sectionIds.length - 1 && // 현재 보여지는 구간이 제일 마지막 index라면
-        entry.isIntersecting && // 마지막 entry가 현재 보여지고 있고
-        entry.intersectingRatio >= 0.99;
+        selectLastOne = 
+            index === sectionIds.length - 1 && //현재 보여지는 구간이 제일 마지막 index라면
+            entry.isIntersecting && // 마지막 entry가 현재 보여지고 있고
+            entry.intersectionRatio >= 0.95;
     });
-    console.log('무조건 라스트 섹션!!', selectlastOne);
+
+    console.log('무조건 라스트 섹션!!', selectLastOne);
     console.log(visibleSections);
     // console.log(entry.target.id);
     // console.log(index);
@@ -44,13 +51,22 @@ function observercallback(entries) {
     // console.log(entry.isIntersecting);
     // console.log(entry.intersectionRatio);
 
-    const navIndex = selectlastOne 
+    const navIndex = selectLastOne 
     ? sectionIds.length - 1 
     : findFirstIntersecting(visibleSections);
+    selectNavItem(navIndex);
     console.log(sectionIds[navIndex]);
 }
 
 function findFirstIntersecting(intersections) {
     const index = intersections.indexOf(true);
-    return index >= 0 ? index : 0
+    return index >= 0 ? index : 0;
+}
+
+function selectNavItem(index) {
+    const navItem = navItems[index];
+    if (!navItem) return;
+    activeNavItem.classList.remove('active');
+    activeNavItem = navItem;
+    activeNavItem.classList.add('active');
 }
