@@ -86,6 +86,7 @@ a {
     display: flex; /* 로고와 nav 나란히 배치할 Flex Box 생성 */
     justify-content: space-between; /* 양 옆(수평) 나란히 배치 */
     align-items: center; /* 아이템 영역 수직 중앙 정렬 */
+    z-index: 1;
 
 }
 
@@ -291,5 +292,62 @@ a {
 
 .bar__value {
     height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* Work */
+#work {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 1배율로 4개의 컬럼 생성 */
+    grid-template-rows: repeat(2, 1fr); /* 2줄의 행 생성 */
+    gap: 1rem;
+}
+
+.project {
+    position: relative; /* metadata 기준을 잡기 위해 */
+    border-radius: 8px;
+    overflow: hidden; /* 내부의 이미지가 삐져 나오지 않도록 조절 */
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__metadata {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    opacity: 0; /* 텍스트 안보이도록 처리 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    transition: all 250ms ease-in; /* 노출 시 자연스러운 회전 설정 */ 
+    transform: translateY(-10px); 
+}
+
+.project__metadata:hover {
+    opacity: 0.8; /* 호버 시 텍스트 불투명도 처리 */
+    transform: translateY(0px); /* 호버 시 위아래 스르륵 효과 */
+}
+
+
+.project__title::after { /* HTML에는 없지만 가상 스타일링 지정 */
+    content: ''; /* 콘텐츠 내용 없음 */
+    display: block; 
+    position: relative;
+    transform: translateX(-50%);
+    margin: .5rem 0;
+    left: 50%;
+    width: 50px;
+    height: 2px;
     background-color: var(--color-accent);
 }
