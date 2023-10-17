@@ -20,3 +20,13 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', ()=> { // scroll 이벤트 발생 시 해당 함수 호출
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// Arrow up 버튼을 아래로 스크롤 시 투명하게 처리함 
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight / 2) { /* 웹스크롤이 홈 높이의 절반 정도 보다 크다면 */
+        arrowUp.style.opacity = 1; /* 화살표 버튼 노출되도록 */
+    } else {
+        arrowUp.style.opacity = 0; /* 화살표 버튼 노출되지 않도록 */
+    }
+})
