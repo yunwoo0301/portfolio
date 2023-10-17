@@ -8,7 +8,7 @@ const headerHeight = header.offsetHeight; /*  함수를 호출해서 헤더의 �
 document.addEventListener('scroll', () => { /* addEventListener : 스크롤이 발생했을 때 일어나는 함수를 호출해줌 */
     
 // Header에 스크롤되는 Y 좌표가 headerHeight보다 크다면 다른 스타일링!
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if(window.scrollY > headerHeight) { 
         header.classList.add('header--dark'); /* 헤더 요소의 classList에 header--dark 클래스를 추가함 */
     } else {
