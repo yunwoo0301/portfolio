@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
     <title>Yunwoo&#39;s Portfolio</title>
     <meta
-        name="description"
-        content="Portfolio for world-renowned software
+      name="description"
+      content="Portfolio for world-renowned software
         enginner Yunwoo"
-        />
+    />
     <meta name="author" content="Yunwoo" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- OG (Open Graph Data) -->
     <meta property="og:title" content="여누의 포트폴리오" />
     <meta property="og:type" content="website" />
@@ -20,279 +20,320 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Single+Day&display=swap" 
-    rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/4e7f64a568.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4e7f64a568.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Typeit -->
     <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
-    <script type="module" src="src/main.js" defer></script> <!-- defer : script 파일 다운로드 되는 동안 HTML 코드를 읽을 수 있음 -->
+    <script type="module" src="src/main.js" defer></script>
+    <!-- defer : script 파일 다운로드 되는 동안 HTML 코드를 읽을 수 있음 -->
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/type.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo__img" src="images/favicon.ico" alt="logo">
-            <h1 class="header__logo__title"><a href="#">Yunwoo</a></h1>
-        </div>
-        <nav class="header__nav"> <!-- nav 요소 미디어쿼리 적용 위해-->
-            <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">My work</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Yunwoo</a></h1>
+      </div>
+      <nav class="header__nav"> <!-- nav 요소 미디어쿼리 적용 위해-->
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
-        <!-- Home -->
-        <section id="home">
-            <div class="home__container"> <!-- home 구간 불투명 설정 위해 -->
-                <img class="home__avatar" src="images/profile_1.png" alt="Yunwoo's profile" />
-                <h2 class="home__title">안녕하세요 &#58;&#41;<br/> 
-                    <strong class="home__title__strong">비전을 갖고 임하는 예비 개발자 정연우입니다.</strong></h2>                
-                    <p class="home__description">저는 수많은 도전을 통해</p> 
-                <p class="home__description">변화에 유연할 정도로 주어진 환경에 적응이 가능하며,</p>
-                <p class="home__description">끊임없는 분석과 공부로 자신의 가치를 높이는 개발자가 되고 싶습니다.</p> 
-                <a class="home__contact" href="#contact">Contact Me</a>
-            </div>
-        </section>
-            <!-- About -->
-            <section id="about" class="section max-container">
-                <h2 class="title">About me</h2> 
-                <p class="description">🧐 다양한 서비스 경험을 통해 사용자(고객) 입장에서 생각하고 니즈를 신속하게 파악합니다.</p>
-                <p class="description">🤝 팀의 결과물이 곧 개인의 결과물이라고 생각합니다.</p>
-                <p class="description">✍️ 지식을 습득하기 위해 내용 정리와 메모를 놓지 않습니다.</p>
-                <p class="description">👩‍💻 더 나아가 시각적인 면과 정보를 원활하게 처리하는 소프트웨어 개발자가 꿈입니다.</p>
-                <ul class="majors">
-                    <li class="major">
-                        <i class="fa-brands fa-html5 major__icon"></i>
-                        <p class="major__title">Front-end</p>
-                        <p>HTML, CSS, JavaScript, React, Web APIs, FireBase, Styled-Component</p>
-                    </li>
-                    <li class="major__tools"> <!-- 협업툴 크기 조절 위해 따로 클래스명 지정 -->
-                        <i class="fa-solid fa-comments major__icon"></i>
-                        <p class="major__title">Communication-Tools</p>
-                        <p>Git, GitHub, Notion, Figma, Slack</p>
-                    </li>
-                    <li class="major">
-                        <i class="fa-solid fa-server major__icon"></i>
-                        <p class="major__title">Back-end</p>
-                        <p>Java, JavaScript, NodeJs, Oracle, MySQL, SpringBoot</p>
-                    </li>
-                </ul>
-                <ul class="jobs">
-                    <li class="job">
-                        <img  class="job__logo" src="images/jobs/KH_education.png" alt="KH_education logo">
-                        <div>
-                            <p class="job__name">KH 정보교육원 Java 기반 풀스텍 양성과정 수료</p>
-                            <p class="job__period">2022. 12 - 2023. 07</p>
-                        </div>
-                    </li>
-                    <li class="job">
-                        <img class="job__logo" src="images/jobs/SGI.png" alt="SGI logo">
-                        <div>
-                            <p class="job__name">서울보증보험 매니저 근무</p>
-                            <p class="job__period">2020. 10 - 2022. 11</p>
-                        </div>
-                    </li>
-                    <li class="job">
-                        <img class="job__logo" src="images/jobs/Hwell.png" alt="Hwell logo">
-                        <div>
-                            <p class="job__name">국민건강보험공단 부팀장 근무</p>
-                            <p class="job__period">2015. 08 - 2020. 06</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section> 
-        <!-- Skills -->
-        <section id="skills"  class="section">
-            <div class="max-container"> <!-- 배경은 채우고 컨텐츠 내용 조정 시 전체 div로 묶기 -->
-                <h2 class="title">My Skills</h2>
-                <p class="description">Skills & Attributes</p> <!-- 내가 갖고있는 스킬과 강점, 프로그래밍 소개 -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Eveniet veritatis ut itaque ipsa perspiciatis enim, 
-                    nihil quos eius aliquid rem at voluptates autem quis ullam? 
-                    Optio, fugit laboriosam! Saepe, quidem!
-                </p>
-                <div class="skills">
-                    <section class="skills__coding">
-                        <h3 class="skills__title">Coding Skills</h3>
-                        <ul>
-                            <li class="bar"> <!-- 1. HTML -->
-                                <div class="bar__metadata"><span>HTML</span><span>95%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 95%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 2. CSS -->
-                                <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 3. JavaScript -->
-                                <div class="bar__metadata"><span>JavaScript</span><span>80%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 3. React-->
-                                <div class="bar__metadata"><span>React</span><span>80%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 5. Styled-Componet -->
-                                <div class="bar__metadata"><span>Styled-Component</span><span>80%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 6. Node.js-->
-                                <div class="bar__metadata"><span>NodeJs</span><span>75%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 7. Java-->
-                                <div class="bar__metadata"><span>Java</span><span>70%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 8. Springboot -->
-                                <div class="bar__metadata"><span>Springboot</span><span>70%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 9. Oracle-->
-                                <div class="bar__metadata"><span>Oracle</span><span>70%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                            <li class="bar"> <!-- 10. MySQL -->
-                                <div class="bar__metadata"><span>MySQL</span><span>70%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="skills__tools">
-                        <h3 class="skills__title">Tools</h3>
-                        <ul>
-                            <li>Visual Studio Code</li>
-                            <li>IntelliJ</li>
-                            <li>AWS</li>
-                        </ul>
-                    </section>
-                    <section class="skills__etc">
-                        <h3 class="skills__title">Etc</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Notion</li>
-                            <li>Figma</li>
-                            <li>Slack</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <!--  Skills 바탕화면 효과 -->
-            </div>
-        </section>
-        <!-- Work -->
-        <section id="work"  class="section">
-            <div class="max-container"> <!-- work 구간 배경 지정 -->
-                <h2 class="title">My work</h2>
-                <p class="description">PROJECTS</p> <!-- 차후에 변경예정 -->
-                <ul class="projects">
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project1.webp" alt="project1" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #1</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project2.webp" alt="project2" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #2</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project3.webp" alt="project3" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #3</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project4.webp" alt="project4" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #4</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project5.webp" alt="project5" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #5</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/projects/project6.webp" alt="project5" class="project__img">
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #6</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Arrow up -->
-        <aside>
-            <a class="arrow-up" href="#home" title="back tp top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </aside>
-    </main>
-    <!-- Footer -->
-    <footer id="contact"  class="section">
-        <div class="max-container">
-            <h2 class="title">Let&#39;s talk</h2>
-            <p class="description">browniris7@naver.com</p>
-            <ul class="contact__links">
-                <li>
-                    <a
-                    class="contact__link" 
-                    href="https://github.com/yunwoo0301" 
-                    target="_blank"
-                    title="my github link"> <!-- a태그 웹 접근성 위해 title 지정 -->
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li> <!-- 노션 주소 추후 변경 예정 -->
-                    <a 
-                    class="contact__link"
-                    href="https://www.notion.so/13e1d45fb02340e785237c62038846f7"
-                    target="_blank"
-                    title="my blog link">
-                        <i class="fa-brands fa-blogger"></i>
-                    </a>
-                </li>
-            </ul>
-            <p>© Web Front-end developer portfolio-- by Yunwoo Jung ⭐</p>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container"> <!-- home 구간 불투명 설정 위해 -->
+          <img class="home__avatar" src="images/profile_1.png" alt="Yunwoo's profile"/>
+          <h2 class="home__title">안녕하세요 &#58;&#41;<br />
+            <strong class="home__title__strong">비전을 갖고 임하는 예비 개발자 정연우입니다.</strong>
+          </h2>
+          <p class="home__description">저는 수많은 도전을 통해</p>
+          <p class="home__description">변화에 유연할 정도로 주어진 환경에 적응이 가능하며,</p>
+          <p class="home__description">끊임없는 분석과 공부로 자신의 가치를 높이는 개발자가 되고 싶습니다.</p>
+          <a class="home__contact" href="#contact">Contact Me</a>
         </div>
+      </section>
+      
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">🧐 다양한 서비스 경험을 통해 사용자(고객) 입장에서 생각하고 니즈를 신속하게 파악합니다.</p>
+        <p class="description">🤝 팀의 결과물이 곧 개인의 결과물이라고 생각합니다.</p>
+        <p class="description">✍️ 지식을 습득하기 위해 내용 정리와 메모를 놓지 않습니다.</p>
+        <p class="description">👩‍💻 더 나아가 시각적인 면과 정보를 원활하게 처리하는 소프트웨어 개발자가 꿈입니다.</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, React, Web APIs, FireBase, Styled-Component</p>
+          </li>
+          <li class="major__tools"> <!-- 협업툴 크기 조절 위해 따로 클래스명 지정 -->
+            <i class="fa-solid fa-comments major__icon"></i>
+            <p class="major__title">Communication-Tools</p>
+            <p>Git, GitHub, Notion, Figma, Slack</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>Java, JavaScript, NodeJs, Oracle, MySQL, SpringBoot</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img class="job__logo" src="images/jobs/KH_education.png" alt="KH_education logo"/>
+            <div>
+              <p class="job__name">KH 정보교육원 Java 기반 풀스텍 양성과정 수료</p>
+              <p class="job__period">2022. 12 - 2023. 07</p>
+            </div>
+          </li>
+          <li class="job">
+            <img class="job__logo" src="images/jobs/SGI.png" alt="SGI logo" />
+            <div>
+              <p class="job__name">서울보증보험 매니저 근무</p>
+              <p class="job__period">2020. 10 - 2022. 11</p>
+            </div>
+          </li>
+          <li class="job">
+            <img class="job__logo" src="images/jobs/Hwell.png" alt="Hwell logo"/>
+            <div>
+              <p class="job__name">국민건강보험공단 부팀장 근무</p>
+              <p class="job__period">2015. 08 - 2020. 06</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">  <!-- 배경은 채우고 컨텐츠 내용 조정 시 전체 div로 묶기 -->
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p> <!-- 내가 갖고있는 스킬과 강점, 프로그래밍 소개 -->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+            veritatis ut itaque ipsa perspiciatis enim, nihil quos eius aliquid
+            rem at voluptates autem quis ullam? Optio, fugit laboriosam! Saepe,
+            quidem!
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar"> <!-- 1. HTML -->
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>95%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 95%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 2. CSS -->
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 3. JavaScript -->
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">  <!-- 4. React-->
+                  <div class="bar__metadata">
+                    <span>React</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 5. Styled-Componet -->
+                  <div class="bar__metadata">
+                    <span>Styled-Component</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 6. Node.js-->
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>75%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 7. Java-->
+                  <div class="bar__metadata">
+                    <span>Java</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 8. Springboot -->
+                  <div class="bar__metadata">
+                    <span>Springboot</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 9. Oracle-->
+                  <div class="bar__metadata">
+                    <span>Oracle</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar"> <!-- 10. MySQL -->
+                  <div class="bar__metadata">
+                    <span>MySQL</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>AWS</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Notion</li>
+                <li>Figma</li>
+                <li>Slack</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container"> <!-- work 구간 배경 지정 -->
+          <h2 class="title">My work</h2>
+          <p class="description">PROJECTS</p> <!-- 차후에 변경예정 -->
+          <ul class="projects">
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project1.webp" alt="project1" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project2.webp" alt="project2" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project3.webp" alt="project3" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project4.webp" alt="project4" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project5.webp" alt="project5" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="images/projects/project6.webp" alt="project5" class="project__img"/>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back tp top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">browniris7@naver.com</p>
+        <ul class="contact__links">
+          <li>
+            <a href="https://github.com/yunwoo0301" target="_blank" title="my github link"> <!-- a태그 웹 접근성 위해 title 지정 -->
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="contact__link" href="https://www.notion.so/13e1d45fb02340e785237c62038846f7" target="_blank" title="my blog link">  <!-- 노션 주소 추후 변경 예정 -->
+              <i class="fa-brands fa-blogger"></i>
+            </a>
+          </li>
+        </ul>
+        <p>© Web Front-end developer portfolio-- by Yunwoo Jung ⭐</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
