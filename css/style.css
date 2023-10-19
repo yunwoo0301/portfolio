@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Julietta";
+    src:url("/portfolio/fonts/Olla_Julietta.ttf") format("opentype");
+}
+
 /*  Global */
 :root {
     /* App Colors */
@@ -129,6 +134,7 @@ button:focus {
 }
 
 .header__logo__title {
+    font-family: "Julietta";
     font-size: 1.8rem; /* rem : 상대적인 unit */
 }
 
