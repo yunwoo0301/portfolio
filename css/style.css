@@ -8,7 +8,7 @@
     /* App Colors */
     --color-primary: var(--color-black); /* 주된 색상 */
     --color-primary-variant: var(--color-gray); /* 주된 색상 변형된 표현 */
-    --color-accent: var(--color-blue); /* 강조하는 색상 */
+    --color-accent: var(--color-purple); /* 강조하는 색상 */
     --color-accent-variant: var(--color-orange); /* 강조색상 변형된 표현 */
     --color-text: var(--color-white); /* 텍스트 색상 */
 
@@ -19,10 +19,10 @@
         rgba(101,26,169,1) 0%, 
         rgba(44,36,36,1) 100%
     );
+
+   /* -- home-bg-img:  */
     --home-bg-image: url("../images/header/star.jpg");
 
-    /* -- home-bg-img:  */
-    /* background-image: url("../images/header/star1.jpg"); */
 
     /* Colors */
     --color-white: #ffffff;
@@ -33,7 +33,7 @@
     --color-green: #D6FF43;
     --color-yellow: #FFBF3C;
     --color-pink: #FE6D79;
-    --color-purple: #A649FC;
+    --color-purple: #c87afc;
 
     /* Size */
     --size-max-width : 1200px;
@@ -225,7 +225,7 @@ button:focus {
     display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-black);
-    margin: 2rem;
+    margin: 3rem;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-radius: 4px;
@@ -234,7 +234,7 @@ button:focus {
 .home__contact:hover {
     background-color: transparent;
     color: var(--color-text);
-    outline: 2px solid var(--color-accent); /* 테두리 적용 시 컨텐츠 사이즈 영향을 미치지 않기 위해 */
+    outline: 3px solid var(--color-accent); /* 테두리 적용 시 컨텐츠 사이즈 영향을 미치지 않기 위해 */
 
 }
 
