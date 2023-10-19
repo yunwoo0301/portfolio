@@ -19,6 +19,10 @@
         rgba(101,26,169,1) 0%, 
         rgba(44,36,36,1) 100%
     );
+    --home-bg-image: url("../images/header/star.jpg");
+
+    /* -- home-bg-img:  */
+    /* background-image: url("../images/header/star1.jpg"); */
 
     /* Colors */
     --color-white: #ffffff;
@@ -170,8 +174,9 @@ button:focus {
 #home {
     position: relative;
     background-color: var(--color-primary);
-    background: rgb(101,26,169);
-    background: var(--home-bg-gradient);
+     /* background: rgb(101,26,169);
+    background: var(--home-bg-gradient); */
+    background: var(--home-bg-image);
     color: var(--color-text);
     padding: 5rem 1rem; /* 상하, 좌우 */
     padding-top: 7rem; /* 프로필 이미지와 title 사이 간격 여백 */
