@@ -9,4 +9,6 @@ new TypeIt('.home__title', { // TypeIt 이라는 새로운 클래스를 이용�
 })  
 .delete()
 .go();
+ScrollOut(); // 스크롤 아웃 함수 호출
+
 

@@ -56,6 +56,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    overflow-y: auto;
 }
 
 h1,
@@ -504,6 +506,22 @@ button:focus {
 
 .contact__link:hover {
     color: var(--color-accent);
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(1);
+    transition: all 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll='in'] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+[data-scroll='out'] {
+    opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
