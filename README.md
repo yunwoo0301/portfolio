@@ -13,11 +13,11 @@
 - Web URL : https://yunwoo0301.github.io/portfolio/
 
 ## DEMO Capture
-![Demo](https://file.notion.so/f/f/239050b2-b936-40ee-853c-b79f996a6356/0c878ae7-d853-46cd-951f-c8b77bcbfcde/home.gif?id=7ccf4af2-d28a-431a-9b6d-808dd9ff74fb&table=block&spaceId=239050b2-b936-40ee-853c-b79f996a6356&expirationTimestamp=1699084800000&signature=ip2RNYTW8HONKOCtJtdLIHlK7kEZpRs3G600XUoNp0k&downloadName=home.gif)
-![Demo](https://file.notion.so/f/f/239050b2-b936-40ee-853c-b79f996a6356/5e7f2fb1-1089-4932-a80f-de1bdf6eb48b/about.gif?id=d08fea20-39ff-4942-99e4-b8988e445ad4&table=block&spaceId=239050b2-b936-40ee-853c-b79f996a6356&expirationTimestamp=1699084800000&signature=xMvD5KaE9WwxAkI_QjQAeyikEouua62n3HeOfIsvyA8&downloadName=about.gif)
-![Demo](https://file.notion.so/f/f/239050b2-b936-40ee-853c-b79f996a6356/06f0325a-a8d3-461b-9322-be61298192cb/skills.gif?id=870b4e02-e95e-41ce-bd67-4bd7fe3dfa2d&table=block&spaceId=239050b2-b936-40ee-853c-b79f996a6356&expirationTimestamp=1699084800000&signature=4DCJKjhM_vu8xEHop58H4SoJ2jP2Ht9moEu7j_SVjXo&downloadName=skills.gif)
-![Demo](https://file.notion.so/f/f/239050b2-b936-40ee-853c-b79f996a6356/47c70fee-e92a-499e-8ca1-166c266d37cb/mywork.gif?id=f908ddde-d874-4b9d-a702-a109dd8deba8&table=block&spaceId=239050b2-b936-40ee-853c-b79f996a6356&expirationTimestamp=1699084800000&signature=DHm0Szb4dzLlbT5Zq3_XqKUFon04N7wpovYsJpqTxPQ&downloadName=mywork.gif)
-![Demo](https://file.notion.so/f/f/239050b2-b936-40ee-853c-b79f996a6356/68d78742-99b9-43fa-91a5-4bc4e54a4c4b/contactme.gif?id=a784dcb3-95ca-4f1b-8780-f80fcd7314b1&table=block&spaceId=239050b2-b936-40ee-853c-b79f996a6356&expirationTimestamp=1699084800000&signature=cbJl9ET6PnsWlySI6Xy2tMdbV-CxUZl0-4r5rIG0yzA&downloadName=contactme.gif)
+![home](https://github.com/yunwoo0301/portfolio/assets/121915009/4390dfef-c2f0-4ed1-b4ed-196403ad0be3)
+![about](https://github.com/yunwoo0301/portfolio/assets/121915009/39ca6dad-76a5-439a-b774-a7873fdce5a6)
+![skills](https://github.com/yunwoo0301/portfolio/assets/121915009/e3b576a7-593e-46f6-83fd-4af6a9dd9df2)
+![mywork](https://github.com/yunwoo0301/portfolio/assets/121915009/1543569a-acdd-4dd5-9f38-6234bc85295b)
+![contactme](https://github.com/yunwoo0301/portfolio/assets/121915009/ccd13ab5-39b5-47cb-8bf4-e94e8ec6990d)
 
 <br />
 <br />
