@@ -296,6 +296,7 @@ button:focus {
 }
 
 .job {
+    
     display: flex;
     align-items: center;
     gap: 20px; /* logo와 경력사항 간격 조절 */
@@ -313,7 +314,7 @@ button:focus {
 
 .job__logo { /* 로고 이미지 크기 조절 */
     width: 150px;
-    height: 50px;
+    /* height: 50px; */
     object-fit: cover; /*원본 이미지 비율 유지*/
 }
 
@@ -588,7 +589,10 @@ button:focus {
     }
 
     .job {
-        justify-content: center;
+        /* justify-content: center; */
+        padding-left: 7em;
+        align-items: center;
+    
     }
 
     .skills {
