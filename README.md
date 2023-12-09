@@ -12,16 +12,6 @@
 - 배포 사이트 : 깃허브
 - Web URL : https://yunwoo0301.github.io/portfolio/
 
-## DEMO Capture
-![home](https://github.com/yunwoo0301/portfolio/assets/121915009/4390dfef-c2f0-4ed1-b4ed-196403ad0be3)
-![about](https://github.com/yunwoo0301/portfolio/assets/121915009/39ca6dad-76a5-439a-b774-a7873fdce5a6)
-![skills](https://github.com/yunwoo0301/portfolio/assets/121915009/e3b576a7-593e-46f6-83fd-4af6a9dd9df2)
-![mywork](https://github.com/yunwoo0301/portfolio/assets/121915009/1543569a-acdd-4dd5-9f38-6234bc85295b)
-![contactme](https://github.com/yunwoo0301/portfolio/assets/121915009/ccd13ab5-39b5-47cb-8bf4-e94e8ec6990d)
-
-<br />
-<br />
-
 </br>
 
 ## 🗓️ 개발 기간
@@ -47,23 +37,73 @@
 
 </br>
 
-### 👒 헤더 페이지
+## 👒 구현 기능
+
+### 👚 웹 페이지
 - 프로필 이미지 및 TypeIt 라이브러리를 활용한 타이틀 강조 효과
-- Intersection Observer API로 섹션 별 네비 활성화
-- 미디어 쿼리를 이용한 반응형 메뉴 바 스타일링
+  
+ ![home](https://github.com/yunwoo0301/portfolio/assets/121915009/84b033d1-7978-42d1-91ea-9e9321c3aac0)
 
 </br>
 
-### 👚 바디 페이지
-- CSS 기능을 활용한 간단한 아이콘 애니메이션 
-- 각 섹션 당 핵심 파트 별 Scroll-out 애니메이션 효과
-- 메인 구간 Flex 및 Grid 레이아웃 이미지 구현
-- CSS 애니메이션을 통한 화살표 버튼 상단 이동  
+- Intersection Observer API로 섹션별 네비 활성화
+
+```
+
+const sections = sectionIds.map((id) => document.querySelector(id)); // 앞서 선언된 섹션 아이템 배열들 중 id를 기준으로 호출해 새로운 sections 배열 생성.
+const navItems = sectionIds.map((id) => // 섹션아이템 배열을 순회하여 navItems를 모두 가져옴 
+    document.querySelector(`[href="${id}"]`));
+
+const visibleSections = sectionIds.map(() => false); // visibleSections : 노출 or 비노출 배열 생성 
+let activeNavItem = navItems[0];
+
+const observer = new IntersectionObserver(observercallback, options);
+sections.forEach((section) => observer.observe(section));
+
+function selectNavItem(index) {
+    const navItem = navItems[index];
+    if (!navItem) return;
+    activeNavItem.classList.remove('active');
+    activeNavItem = navItem;
+    activeNavItem.classList.add('active');
+}
+
+```
+
+![nav_bar](https://github.com/yunwoo0301/portfolio/assets/121915009/74e68f85-8d81-4df1-8122-3c76f2cbc3c1)
 
 </br>
 
-### 👡 푸터 페이지
-- GitHub & Blog 외부 Link 연결
+- 프로젝트 작업별 사용된 스킬 비율 그래프화
+  
+![skills_bar](https://github.com/yunwoo0301/portfolio/assets/121915009/fa488776-0470-491a-bde0-19c8ca6e3f8e)
+
+</br>
+
+- 특정 구간 스크롤 시 화살표 아이콘 노출 & 비노출 효과 강조
+
+```
+
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight / 2) {
+        arrowUp.style.opacity = 1; 
+    } else {
+        arrowUp.style.opacity = 0;
+    }
+})
+
+```
+
+![arrow](https://github.com/yunwoo0301/portfolio/assets/121915009/8cf96fd9-f097-4570-a27c-3384e69679bf)
+
+
+</br>
+
+### 👡 모바일 페이지
+- PC, 모바일에 최적화된 반응형 미디어 쿼리 적용
+  
+![mobile](https://github.com/yunwoo0301/portfolio/assets/121915009/02280d94-2e97-4b51-b05d-314361710feb)
 
 </br>
 
